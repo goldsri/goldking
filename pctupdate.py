@@ -1,6 +1,6 @@
 import urllib.request
 
-URL = "https://raw.githubusercontent.com/goldsri/goldking1/refs/heads/main/Goldpct.m3u"
+URL = "https://raw.githubusercontent.com/Babuperumana/IN_IptV/refs/heads/main/pocket.m3u"
 
 req = urllib.request.Request(
     URL,
