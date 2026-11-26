@@ -36,7 +36,7 @@ def fetch_and_brand_playlist(url: str, output_file: str):
     print(f"Successfully saved branded playlist to '{output_file}'")
 
 def main():
-    url = 'https://tamil-m3u-b58859.gitlab.io/'
+    url = 'https://tiny.cc/Pocket-TV'
     output = 'Playlists/Pocket_TV.m3u'
     
     try:
