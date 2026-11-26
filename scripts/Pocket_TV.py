@@ -18,12 +18,12 @@ def fetch_and_brand_playlist(url: str, output_file: str):
     for line in content.splitlines():
         if line.startswith('#EXTINF:'):
             # Brand tvg-name if present
-            line = re.sub(r'tvg-name="([^"]+)"', r'tvg-name="\1 | GmaxHub"', line)
+            line = re.sub(r'tvg-name="([^"]+)"', r'tvg-name="\1 | goldking"', line)
             # Brand display title at the end of EXTINF
             if ',' in line:
                 prefix, title = line.rsplit(',', 1)
-                if not title.strip().endswith('| GmaxHub'):
-                    line = f"{prefix},{title.strip()} | GmaxHub"
+                if not title.strip().endswith('| goldking'):
+                    line = f"{prefix},{title.strip()} | goldking"
         branded_lines.append(line)
 
     output_content = '\n'.join(branded_lines) + '\n'
